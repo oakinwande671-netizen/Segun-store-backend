@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 const User = require('../models/userSchema');
-
+ 
+ router.get('/hello', (req, res) => res.status(200).send("You are at the users route"))
 router.post('/login', async (req, res) => {
     const userReq = req.body;
 
