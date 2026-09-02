@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
+const port= process.env.PORT || 3000
 
 const app = express();
 
@@ -14,9 +15,9 @@ app.use(cors({
 app.use(express.json());
 
 require('./server/db/config')
-    .then((con) => {
-        console.log('database connected')
-        app.listen(3000, () => console.log("app is running at port 3000"))
+.then((con) => {
+    console.log('database connected')
+    app.listen(port, () => console.log("app is running at port 3000"))
     })
     .catch(console.error)
 
