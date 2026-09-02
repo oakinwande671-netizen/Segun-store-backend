@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-    origin: "segun-store.vercel.app",
+    origin: "https://segun-store.vercel.app",
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 
