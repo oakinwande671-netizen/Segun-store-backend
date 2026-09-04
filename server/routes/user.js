@@ -22,7 +22,7 @@ router.post('/login', async (req, res) => {
         delete plainUser.password;
 
         res.status(200).json(plainUser); 
-    } catch (error) {
+          } catch (error) {
         console.log(error);
         res.status(500).send("Internal server error");
     }
