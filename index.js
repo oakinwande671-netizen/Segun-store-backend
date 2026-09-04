@@ -17,8 +17,8 @@ app.use(express.json());
 
 const products = require("./server/routes/products");
 const users = require("./server/routes/user");
-app.use("/api/v1/products", products);
-app.use("/api/v1/users", users);
+app.use("/products", products);
+app.use("/users", users);
 
 require('./server/db/config')
 .then((con) => {
