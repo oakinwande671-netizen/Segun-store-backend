@@ -7,10 +7,10 @@ const port= process.env.PORT || 3000
 
 const app = express();
 
-app.use(cors({
-    origin: "https://segun-store.vercel.app",
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
+// app.use(cors({
+//     origin: "https://segun-store.vercel.app",
+//     methods: ['GET', 'POST', 'PUT', 'DELETE']
+// }));
 
 app.use(express.json());
 
