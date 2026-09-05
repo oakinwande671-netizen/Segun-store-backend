@@ -23,6 +23,6 @@ app.use("/users", users);
 require('./server/db/config')
 .then((con) => {
     console.log('database connected')
-    app.listen(port, () => console.log("app is running at port 3000"))
-    })
-    .catch(console.error)
+})
+.catch(console.error)
+app.listen(port, () => console.log("app is running at port 3000"));
